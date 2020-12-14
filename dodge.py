@@ -19,11 +19,11 @@ light_green=(0,255,0)
 pause=False
 
 gameDisplay=pygame.display.set_mode((display_width,display_height))
-pygame.display.set_caption("My First Game")
+pygame.display.set_caption("Dodge race")
 clock=pygame.time.Clock()
 
-car_image=pygame.image.load("Untitled.png")
-icon_image=pygame.image.load("Untitled2.png")
+car_image=pygame.image.load("nsx.png")
+icon_image=pygame.image.load("bgr.jpg")
 pygame.display.set_icon(icon_image)
 
 def things_dodged(count):
