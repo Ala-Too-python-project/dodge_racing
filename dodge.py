@@ -64,3 +64,20 @@ def button(text,color,acolor,x,y,w,h,action=None):
 	TextSurf,TextRect=text_objects(text,smallText,black)
 	TextRect.center=((x+w/2),(y+h/2))
 	gameDisplay.blit(TextSurf,TextRect)
+	
+def crash():
+	largeText=pygame.font.Font("freesansbold.ttf",70)
+	TextSurf,TextRect =text_objects("YOU CRASHED",largeText,blue)
+	TextRect.center=((display_width/2),(display_height/2))
+	gameDisplay.blit(TextSurf,TextRect)
+	while True:
+		for event in pygame.event.get():
+			if event.type == pygame.QUIT:
+				pygame.quit()
+				quit()
+		button("PLAY AGAIN!",red,light_red,200,450,160,50,game_loop)
+		button("Quit",green,light_green,500,450,100,50,quit)
+
+		pygame.display.update()
+		clock.tick(70)
+
