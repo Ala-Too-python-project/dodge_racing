@@ -49,3 +49,18 @@ def message_display(text):
 	pygame.display.update();
 	time.sleep(1)
 	game_loop()
+	
+def button(text,color,acolor,x,y,w,h,action=None):
+	mouse=pygame.mouse.get_pos()
+	click=pygame.mouse.get_pressed()
+	#print(click)
+	if mouse[0]<x+w and mouse[0]>x and mouse[1]<y+h and mouse[1]>y:
+		pygame.draw.rect(gameDisplay,acolor,(x,y,w,h))
+		if click[0]==1 and action != None:
+			action()
+	else:
+		pygame.draw.rect(gameDisplay,color,(x,y,w,h))
+	smallText=pygame.font.Font("freesansbold.ttf",25)
+	TextSurf,TextRect=text_objects(text,smallText,black)
+	TextRect.center=((x+w/2),(y+h/2))
+	gameDisplay.blit(TextSurf,TextRect)
