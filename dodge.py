@@ -80,4 +80,21 @@ def crash():
 
 		pygame.display.update()
 		clock.tick(70)
+def game_intro():
+	intro=True
+	while intro:
+		for event in pygame.event.get():
+			if event.type == pygame.QUIT:
+				pygame.quit()
+				quit()
+			gameDisplay.fill(white)
+			largeText=pygame.font.Font("freesansbold.ttf",100)
+			TextSurf,TextRect =text_objects("CAR RASH",largeText,black)
+			TextRect.center=((display_width/2),(display_height/2))
+			gameDisplay.blit(TextSurf,TextRect)
+			button("Play",red,light_red,200,450,100,50,game_loop)
+			button("Quit",green,light_green,500,450,100,50,quit)
+
+			pygame.display.update()
+			clock.tick(70)
 
