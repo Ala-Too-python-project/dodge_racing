@@ -98,3 +98,41 @@ def game_intro():
 			pygame.display.update()
 			clock.tick(70)
 
+def unpause():
+	global pause
+	pause=False
+
+def paused():
+	global pause
+	pause=True
+	largeText=pygame.font.Font("freesansbold.ttf",70)
+	TextSurf,TextRect =text_objects("PAUSED",largeText,black)
+	TextRect.center=((display_width/2),(display_height/2))
+	gameDisplay.blit(TextSurf,TextRect)
+	while pause:
+		for event in pygame.event.get():
+			if event.type == pygame.QUIT:
+				pygame.quit()
+				quit()
+		button("CONTINUE",red,light_red,200,450,160,50,unpause)
+		button("Quit",green,light_green,500,450,100,50,quit)
+
+		pygame.display.update()
+		clock.tick(70)
+
+
+def game_loop():
+		x=(display_width * 0.40)
+		y=(display_height * 0.767)
+		i=0
+		car_width=120
+		x_change=0
+		dodged=0
+
+		thing_width=100
+		thing_startx=random.randrange(0,display_width-thing_width)
+		thing_starty=-600
+		thing_speed=4
+		thing_height=100
+
+		crashed=False
