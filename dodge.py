@@ -154,7 +154,7 @@ def game_loop():
 						x_change=0
 
 			x+=x_change
-			gameDisplay.fill(white)
+			gameDisplay.fill(icon_image, (0, 0))
 			things(thing_startx,thing_starty,thing_width,thing_height,black)
 			thing_starty+=thing_speed
 			car(x,y)
