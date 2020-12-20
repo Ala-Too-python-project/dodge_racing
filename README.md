@@ -13,3 +13,8 @@ Screenshots:
 
 Try to avoid obstacles and not touch the corners of the race track!
 
+![rule](https://user-images.githubusercontent.com/73636880/102710338-c8db0500-42db-11eb-8736-694a193d34a6.png)
+
+
+
+
