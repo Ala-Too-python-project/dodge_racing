@@ -23,7 +23,8 @@ Good luck on the track, enjoy the game)
 
 ![rule](https://user-images.githubusercontent.com/73636880/102710464-ab5a6b00-42dc-11eb-8800-3c87ac3465b8.png)
 
+Press the key button = 'p' to pause the game
 
-
+![Снимок экрана (112)](https://user-images.githubusercontent.com/72734736/102718353-e88d2000-4311-11eb-8b41-246029cda477.png)
 
 
