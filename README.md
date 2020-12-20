@@ -17,7 +17,7 @@ Try to avoid obstacles and not touch the corners of the race track!
 
 ![Untitled](https://user-images.githubusercontent.com/73636880/102710352-e5773d00-42db-11eb-9aa3-7e8f67ae6128.png)
 
-Try collect as many points as possible( 1 dodged item = 1 point)
+Try to collect as many points as possible( 1 dodged item = 1 point)
 Good luck on the track, enjoy the game)
 
 ![rule](https://user-images.githubusercontent.com/73636880/102710464-ab5a6b00-42dc-11eb-8800-3c87ac3465b8.png)
