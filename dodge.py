@@ -30,7 +30,7 @@ pygame.display.set_icon(icon_image)
 
 
 def things_dodged(count):
-    font = pygame.font.SysFont(None, 30)
+    font = pygame.font.SysFont(str(None), 30)
     text = font.render("Dodged: " + str(count), True, green)
     gameDisplay.blit(text, (0, 0))
 
