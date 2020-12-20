@@ -6,6 +6,7 @@ This is a simple game in which you have to dodge obstacles.
 Rules: You have to dodge the cones, and earn points. If you crash the game will over.
 
 Done by: Bekmurzaev Elmir/ Baygeldiev Samat.
+YOUTUBE PRESENTATION : https://www.youtube.com/watch?v=o3A0eSUo-Nk&feature=youtu.be
 
 Screenshots:
 
