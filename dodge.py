@@ -24,7 +24,7 @@ clock = pygame.time.Clock()
 
 car_image = pygame.image.load("nsx.png")
 icon_image = pygame.image.load("bgr.jpg")
-icon1_image = pygame.image.load("page1.jpg")
+icon1_image = pygame.image.load("logo2.png")
 thing_image = pygame.image.load("thing8.png")
 pygame.display.set_icon(icon_image)
 
